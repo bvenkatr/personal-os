@@ -124,6 +124,7 @@
 			docker run -it -v /data/src:/test/src nginx:1.7
 
 ####Volumes in Dockerfile
+	Get the content for this from docker getting started videos
 
 ####Uses of volumes 
 	1. De-couple the data that is stored from the container which created the data
