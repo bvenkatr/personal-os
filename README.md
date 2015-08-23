@@ -36,6 +36,12 @@
 	
 	Here docker command will create a container from image called hello-world and starts that container. First docker looks for hello-world image on local machine,  If it can't find it locally then it will looks at docker registry and gets from there.
 	
+	Note:- If you would like to use docker as a non-root user, you should now consider adding your user to the "docker" group with something like below
+	
+	sudo usermod -aG docker venkat
+	
+	Remember that you will have to log out and back in for this to take effect!
+	
 ####Introducing Containers
 	Container based virtualization uses the kernel on the host's operating sytem to run multiple guest instances.
 	Each guest instance is called a container.
@@ -53,6 +59,15 @@
 	3. Less CPU, RAM, Storage space required.
 	4. More containers per machine than VMs
 	5. Greater Productivity
+
+####Docker containers and images
+	#####Images
+		1. Read only template used to create containers
+		2. Built by you or other docker users
+		3. Stored in the docker hub or your local registry
+	#####Containers
+		1. Isolated application platform
+		2. Contains everything needed to run your application(necessary libraries and binaries)
 
 ####Build New Image
 	1. Create a container from an Ubuntu image and run a bash terminal
