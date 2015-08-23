@@ -5,7 +5,13 @@
 	1. Separation of concerns
 		-> Developers focus on building their apps
 		-> System admins focus on deployment
-
+	Note:- Previous developers used to write applications on allocated environment and pass that to sys-admins to deploy, and during deployment the sys admin might discover that libraries the application depends on missing in the deployment environment.
+		-> Fast development cycle
+		-> Application portability
+			-> build in one environment and ship to another(I could not understand this sentensel, so I need to ask  some one)
+		-> Scalability
+			-> Easily spin up new constainers if needed
+		-> Run more apps on one host machine.
 ####The Docker platform consists of multiple products/tools.
 1. Docker Engine
 2. Docker Hub
