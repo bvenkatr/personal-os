@@ -1,6 +1,11 @@
 ####What is Docker ?
  	Docker is a platform for developing, shipping and running applications using container virtualization technology.
-  
+
+####Benefits of Docker
+	1. Separation of concerns
+		-> Developers focus on building their apps
+		-> System admins focus on deployment
+
 ####The Docker platform consists of multiple products/tools.
 1. Docker Engine
 2. Docker Hub
@@ -61,13 +66,13 @@
 	5. Greater Productivity
 
 ####Docker containers and images
-	#####Images
-		1. Read only template used to create containers
-		2. Built by you or other docker users
-		3. Stored in the docker hub or your local registry
-	#####Containers
-		1. Isolated application platform
-		2. Contains everything needed to run your application(necessary libraries and binaries)
+#####Images
+	1. Read only template used to create containers
+	2. Built by you or other docker users
+	3. Stored in the docker hub or your local registry
+#####Containers
+	1. Isolated application platform
+	2. Contains everything needed to run your application(necessary libraries and binaries)
 
 ####Build New Image
 	1. Create a container from an Ubuntu image and run a bash terminal
