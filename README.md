@@ -65,3 +65,9 @@
 	5. Save the container as a new Image. For the repository name use <your name>/curl. Tag the Image as 1.0
 		docker commit <container ID> <your name>/curl:1.0
 	6. Run docker Images and verify that you can see your new image.
+
+####Use New Iamge
+	1. Create a container using the new image you created in the previous step. Run /bin/bash as the process to get terminal access
+		docker run -it venkat/curl:1.0 /bin/bash
+	2. verify that curl is installed
+		which curl
