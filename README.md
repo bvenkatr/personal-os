@@ -53,3 +53,15 @@
 	3. Less CPU, RAM, Storage space required.
 	4. More containers per machine than VMs
 	5. Greater Productivity
+
+####Build New Image
+	1. Create a container from an Ubuntu image and run a bash terminal
+		docker run -i -t ubuntu:14.04 /bin/bash
+	2. Inside the container, install curl
+		apt-get update (do it if you didn't do already)
+		apt-get install curl
+	3. Exit the container terminal
+	4. Run docker ps -a and take note of your container ID
+	5. Save the container as a new Image. For the repository name use <your name>/curl. Tag the Image as 1.0
+		docker commit <container ID> <your name>/curl:1.0
+	6. Run docker Images and verify that you can see your new image.
