@@ -80,3 +80,17 @@
 		FROM ubuntu:14.04
 		RUN apt-get install vim
 		RUN apt-get install curl
+
+####Mount a volume
+	1. Volumes are mounted when creating or executing a container 
+	2. Can be mapped to a host directory
+	3. Volume paths specified must be absolute
+		Execute a new container and mount the folder /myvolume into its file system
+			docker run -d -P -v /myvolme nginx:1.7
+		Execute a new container and map the /data/src folder from the host into the /test/src folder in the container
+			docker run -it -v /data/src:/test/src nginx:1.7
+####Uses of volumes 
+	1. De-couple the data that is stored from the container which created the data
+	2. Good for sharing data between containers
+		-> Can setup a data containers which has a volume you mount in other containers
+	3. Mounting folders from the host is good for testing purposes but generally not recommended for production use.
