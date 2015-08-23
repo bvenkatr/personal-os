@@ -71,3 +71,12 @@
 		docker run -it venkat/curl:1.0 /bin/bash
 	2. verify that curl is installed
 		which curl
+
+####Dockerfile Instructions
+	1. Instructions specify what to do when building the image
+	2. FROM instruction specifies what the base image should be
+	3. RUN instruction specifies a command to execute
+		#Example of a comment
+		FROM ubuntu:14.04
+		RUN apt-get install vim
+		RUN apt-get install curl
