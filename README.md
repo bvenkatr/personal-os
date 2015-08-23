@@ -107,5 +107,8 @@
 		docker run -it test:1.0 bash
 	7. Verify that the /www/website folder exists and that there are no files inside
 	
-####hlljljljlj
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+####Linking Containers
+	Linking is a communication method between containers which allows them to securely transfer the data from one to another.
+		-> Source and recipient containers
+		-> Recipient containers have access to data on source containers
+		-> Links are established based on container names
