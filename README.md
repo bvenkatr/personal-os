@@ -106,3 +106,6 @@
 	6. Execute a new container with your test image and go into it's bash shell
 		docker run -it test:1.0 bash
 	7. Verify that the /www/website folder exists and that there are no files inside
+	
+####hlljljljlj
+	![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
