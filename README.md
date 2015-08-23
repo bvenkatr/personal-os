@@ -8,7 +8,7 @@
 	Note:- Previous developers used to write applications on allocated environment and pass that to sys-admins to deploy, and during deployment the sys admin might discover that libraries the application depends on missing in the deployment environment.
 		-> Fast development cycle
 		-> Application portability
-			-> build in one environment and ship to another(I could not understand this sentensel, so I need to ask  some one)
+			-> build in one environment and ship to another(I am not getting a clear imaginary picture on this, so I need to help on this)
 		-> Scalability
 			-> Easily spin up new constainers if needed
 		-> Run more apps on one host machine.
