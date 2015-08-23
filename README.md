@@ -94,3 +94,15 @@
 	2. Good for sharing data between containers
 		-> Can setup a data containers which has a volume you mount in other containers
 	3. Mounting folders from the host is good for testing purposes but generally not recommended for production use.
+
+####Create and test a volume
+	1. Execute a new container and initialise a volume at /www/website. Run a bash terminal as your container process
+		docker run -it -v /www/website ubuntu:14.04 bash
+	2. Inside the container, verify that you can get to /www/website
+	3. Create a file inside the /www/website folder
+	4. Exit the container
+	5. Commit the updated container as a new image called test and tag it as 1.0
+		docker commit <container ID> test:1.0
+	6. Execute a new container with your test image and go into it's bash shell
+		docker run -it test:1.0 bash
+	7. Verify that the /www/website folder exists and that there are no files inside
