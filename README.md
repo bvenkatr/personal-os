@@ -81,6 +81,13 @@
 		RUN apt-get install vim
 		RUN apt-get install curl
 
+####Volumes
+	A Volume is a designated directory in a container, which is designed to persist data, independent of the container's life cycle.
+		1. Volume changes are excluded when updating an image
+		2. Persist when a container is deleted
+		3. Can be mapped to a host folder
+		4. Can be shared between containers
+
 ####Mount a volume
 	1. Volumes are mounted when creating or executing a container 
 	2. Can be mapped to a host directory
@@ -89,6 +96,9 @@
 			docker run -d -P -v /myvolme nginx:1.7
 		Execute a new container and map the /data/src folder from the host into the /test/src folder in the container
 			docker run -it -v /data/src:/test/src nginx:1.7
+
+####Volumes in Dockerfile
+
 ####Uses of volumes 
 	1. De-couple the data that is stored from the container which created the data
 	2. Good for sharing data between containers
