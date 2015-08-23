@@ -108,4 +108,5 @@
 	7. Verify that the /www/website folder exists and that there are no files inside
 	
 ####hlljljljlj
-	![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+	![Image of Yaktocat]
+	(https://octodex.github.com/images/yaktocat.png)
