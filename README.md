@@ -149,3 +149,4 @@
 		-> Source and recipient containers
 		-> Recipient containers have access to data on source containers
 		-> Links are established based on container names
+![Container Linking](image url)
