@@ -149,4 +149,4 @@
 		-> Source and recipient containers
 		-> Recipient containers have access to data on source containers
 		-> Links are established based on container names
-![Container Linking](image url)
+![Container Linking](https://photos.google.com/share/AF1QipOhd_mbmluuXOs5YI2x5DbmTTtmrZHCwH3-bqr021-5SlKiLzA5ZOiTR0QZGxK_2w/photo/AF1QipMdpP4c3rbm32ov_ErujJvOdJg0JxrJ_2IuT0im?key=MGJfazZZQVVZcXdvTUJray1JOFAxVV81X1BWelRn)
